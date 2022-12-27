@@ -9,7 +9,14 @@
 }
 
 body {
+    overflow: hidden;
+    background-color: $background;
     display: flex;
     justify-content: center;
+    align-content: center;
+    height: 100vh;
     margin-top: 2em;
+    background-repeat: no-repeat;
 }
+
+
