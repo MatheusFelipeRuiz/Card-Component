@@ -315,10 +315,10 @@ template {
 body {
   overflow: hidden;
   background-color: #19a2ae;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 100vh;
   margin-top: 2em;
   background-repeat: no-repeat; }
 
@@ -394,5 +394,26 @@ body {
   #bottom-circle img {
     width: 20em;
     height: 20em; }
+
+@media (min-width: 1200px) {
+  body {
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    align-items: center; }
+
+  #top-circle {
+    top: -10em;
+    left: -8em; }
+    #top-circle img {
+      width: 40em;
+      height: 40em; }
+
+  #bottom-circle {
+    right: -10em;
+    bottom: -20em; }
+    #bottom-circle img {
+      width: 40em;
+      height: 40em; } }
 
 /*# sourceMappingURL=style.css.map */

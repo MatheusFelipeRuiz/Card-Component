@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+
+    body {
+        overflow: hidden;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #top-circle{
+        top: -10em;
+        left: -8em;
+        img {
+            width: 40em;
+            height: 40em;
+        }
+    }
+
+    #bottom-circle {
+        right: -10em;
+        bottom: -20em;
+        img {
+            width: 40em;
+            height: 40em;
+        }
+    }
+}
