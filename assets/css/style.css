@@ -313,15 +313,23 @@ template {
   list-style-type: none; }
 
 body {
+  overflow: hidden;
+  background-color: #19a2ae;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 2em; }
+  align-content: center;
+  margin-top: 2em;
+  background-repeat: no-repeat; }
 
 .card {
+  position: relative;
+  z-index: 10;
   width: 300px;
   height: 400px;
   border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white; }
 
 .start-container {
   background-image: url("../img/bg-pattern-card.svg");
@@ -331,8 +339,7 @@ body {
 .middle-container {
   width: 300px;
   height: 150px;
-  text-align: center;
-  background-color: white; }
+  text-align: center; }
   .middle-container img {
     position: relative;
     bottom: calc(50/100 * 100px);
@@ -370,5 +377,43 @@ body {
         font-weight: 400; }
   .footer-card h5 {
     display: inline-block; }
+
+#top-circle {
+  position: absolute;
+  left: -100px;
+  top: -20px; }
+  #top-circle img {
+    z-index: 0;
+    width: 20em;
+    height: 20em; }
+
+#bottom-circle {
+  position: absolute;
+  right: -160px;
+  bottom: 0; }
+  #bottom-circle img {
+    width: 20em;
+    height: 20em; }
+
+@media (min-width: 1200px) {
+  body {
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    align-items: center; }
+
+  #top-circle {
+    top: -10em;
+    left: -8em; }
+    #top-circle img {
+      width: 40em;
+      height: 40em; }
+
+  #bottom-circle {
+    right: -10em;
+    bottom: -20em; }
+    #bottom-circle img {
+      width: 40em;
+      height: 40em; } }
 
 /*# sourceMappingURL=style.css.map */

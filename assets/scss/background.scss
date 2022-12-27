@@ -1,0 +1,19 @@
+#top-circle {
+    position: absolute;
+    left: -100px;
+    top: -20px;
+    img {
+        z-index: 0;
+        width: 20em; height: 20em;
+    }
+}
+
+#bottom-circle {
+
+    position: absolute;
+    right: -160px;
+    bottom: 0;
+    img {
+        width: 20em; height: 20em; 
+    }
+}
